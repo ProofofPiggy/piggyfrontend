@@ -8,9 +8,6 @@ import { withRouter } from 'next/router';
 import { getCookie, isAuth } from '../../actions/auth';
 
 import { singleAdd, updateAdd } from '../../actions/recommended';
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
-import '../../node_modules/react-quill/dist/quill.snow.css';
-import { QuillModules, QuillFormats } from '../../helpers/quill';
 import { API } from '../../config'; 
 
 const SunEditor = dynamic(() => import('suneditor-react'), {ssr: false})
