@@ -118,7 +118,7 @@ const Blogs = ({ blogs, categories, totalBlogs, blogsLimit, blogSkip, router,tit
                     <div className="text-center m-4">{loadMoreButton()}</div>
                     </div>
                    
-                    <div style={{backgroundColor:'pink',padding:'0 2%'}}>
+                    <div style={{backgroundColor:'',padding:'0 2%'}}>
                   
                     <ins class="adsbygoogle"
      style={{display:'block'}}
