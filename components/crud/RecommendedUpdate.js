@@ -12,6 +12,8 @@ import { API } from '../../config';
 
 const SunEditor = dynamic(() => import('suneditor-react'), {ssr: false})
 import '../../node_modules/suneditor/dist/css/suneditor.min.css'; 
+import 'suneditor/dist/css/suneditor.min.css'; 
+import 'suneditor/src/assets/css/suneditor.css';
 
 
 const RecommendedUpdate = ({ router }) => {
