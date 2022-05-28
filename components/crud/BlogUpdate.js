@@ -153,7 +153,7 @@ const BlogUpdate = ({ router }) => {
         return (
             categories &&
             categories.map((c, i) => (
-                <li key={i} className="list-unstyled"  style={{textTransform:'uppercase'}}
+                <li key={i} className="list-unstyled"  style={{textTransform:'uppercase'}}>
                     <input
                         onChange={handleToggle(c._id)}
                         checked={findOutCategory(c._id)}
