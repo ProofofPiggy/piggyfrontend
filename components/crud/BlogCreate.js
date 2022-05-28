@@ -146,7 +146,7 @@ const CreateBlog = ({ router }) => {
         return (
             categories &&
             categories.map((c, i) => (
-                <li key={i} className="list-unstyled">
+                <li key={i} className="list-unstyled" style={{textTransform:'uppercase'}} >
                     <input onChange={handleToggle(c._id)} type="checkbox" className="mr-2" />
                     <label className="form-check-label">{c.name}</label>
                 </li>
@@ -158,9 +158,9 @@ const CreateBlog = ({ router }) => {
         return (
             tags &&
             tags.map((t, i) => (
-                <li key={i} className="list-unstyled">
+                <li key={i} className="list-unstyled" style={{textTransform:'uppercase'}} >
                     <input onChange={handleTagsToggle(t._id)} type="checkbox" className="mr-2" />
-                    <label className="form-check-label">{t.name}</label>
+                    <label className="form-check-label">#{t.name}</label>
                 </li>
             ))
         );
